@@ -29,7 +29,8 @@
             <div class="col ml-6">
                 <label for="resultValor1" class="label-control">
                 </label>
-                <input type="text" name="resultValor1" value="<?php echo $valor1; ?>" id="resultValor1" class="ml-3 form-control" />
+                <input type="text" name="resultValor1" value="<?php echo $valor1; ?>" 
+                    id="resultValor1" class="ml-3 form-control" />
             </div>
         </div>
     </form>

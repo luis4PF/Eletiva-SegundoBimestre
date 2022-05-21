@@ -13,27 +13,45 @@
 </head>
 
 <body class="container">
-    <h1>EXERCÍCIO 2</h1>
-    <form method="POST" action="/resultado1">
+    <h1>exemplo</h1>
+    <form method="POST" action="/resultado5">
         <div class="row">
-            <div class="col">
-                <label class="label-control"> INFORME O VALOR DO QUILO: </label>
-                <input class="form-control" name="valor1" type="text" />
+        <div class="cow mt-3">
+                <label for="valor1" class="label-control">
+                    INFORME SUA MÉDIA DO PRIMEIRO BIMESTRE:
+                </label>
+                <input type="number" step="any" name="valor1" 
+                    placeholder="8, 9.5" id="valor1" class="form-control" />
             </div>
-            <div class="col">
-                <label class="label-control"> INFORME A QUANTIDADE DE QUILOS DO PRODUTO CONSUMIDA: </label>
-                <input class="form-control" name="valor2" type="text" />
+            <div class="cow mt-3">
+                <label for="valor2" class="label-control">
+                    INFORME SUA MÉDIA DO SEGUNDO BIMESTRE:
+                </label>
+                <input type="number" step="any" name="valor2" 
+                    placeholder="8, 9.5" id="valor2" class="form-control" />
             </div>
-        </div>
-        <div class="row mt-2">
+            <div class="cow mt-3">
+                <label for="valor3" class="label-control">
+                    INFORME SUA MÉDIA DO TERCEIRO BIMESTRE:
+                </label>
+                <input type="number" step="any" name="valor3" 
+                    placeholder="8, 9.5" id="valor3" class="form-control" />
+            </div>
+            <div class="cow mt-3">
+                <label for="valor4" class="label-control">
+                    INFORME SUA MÉDIA DO QUARTO BIMESTRE:
+                </label>
+                <input type="number" step="any" name="valor4" 
+                    placeholder="8, 9.5" id="valor4" class="form-control" />
+            </div>
             <div class="col">
                 <button type="submit" class="btn btn-primary">CALCULAR</button>
             </div>
         </div>
     </form>
 <?php
-    if (isset($final))
-        echo "O VALOR DO TROCO É: $final";
+    if (isset($valor1))
+        echo "O VALOR DO TROCO É: $valor1";
 ?>
 
 

@@ -36,6 +36,29 @@
         echo "O VALOR DO TROCO É: $troco";
 ?>
 
+<h1>EXERCÍCIO 2</h1>
+    <form method="POST" action="/resultado2">
+        <div class="row">
+            <div class="col">
+                <label class="label-control"> INFORME O VALOR DO QUILO: </label>
+                <input class="form-control" name="valor1" type="text" />
+            </div>
+            <div class="col">
+                <label class="label-control"> INFORME A QUANTIDADE DE QUILOS DO PRODUTO CONSUMIDA: </label>
+                <input class="form-control" name="valor2" type="text" />
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">CALCULAR</button>
+            </div>
+        </div>
+    </form>
+<?php
+    if (isset($final))
+        echo "O VALOR DO TROCO É: $final";
+?>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 

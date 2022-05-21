@@ -14,7 +14,7 @@
 
 <body class="container">
     <h1>EXERCÍCIO 2</h1>
-    <form method="POST" action="/resultado1">
+    <form method="POST" action="/resultado2">
         <div class="row">
             <div class="col">
                 <label class="label-control"> INFORME O VALOR DO QUILO: </label>
@@ -31,10 +31,10 @@
             </div>
         </div>
     </form>
-<?php
+    <?php
     if (isset($final))
         echo "O VALOR DO TROCO É: $final";
-?>
+    ?>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
