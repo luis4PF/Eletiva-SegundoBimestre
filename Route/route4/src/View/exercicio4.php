@@ -14,26 +14,21 @@
 
 <body class="container">
     <h1>exemplo</h1>
-    <form method="POST" action="/resultado1">
+    <form method="POST" action="/resultado4">
         <div class="row">
             <div class="col">
-                <label class="label-control"> INFORME O VALOR: </label>
+                <label class="label-control"> INFORME UM VALOR E DESCUBRA SE É POSITIVO, NEGATIVO OU IGUAL A ZERO: </label>
                 <input class="form-control" name="valor1" type="text" />
-            </div>
-            <div class="col">
-                <label class="label-control"> INFORME O PREÇO DO PRODUTO: </label>
-                <input class="form-control" name="valor2" type="text" />
-            </div>
+            </div>            
         </div>
         <div class="row mt-2">
             <div class="col">
-                <button type="submit" class="btn btn-primary">OK</button>
+                <button type="submit" class="btn btn-primary">CALCULAR</button>
             </div>
         </div>
     </form>
 <?php
-    if (isset($troco))
-        echo "O VALOR DO TROCO É: $troco";
+    if (isset($valor1))
 ?>
 
 

@@ -11,25 +11,30 @@
 
     <title>Hello, world!</title>
 </head>
-
+<br>
 <body class="container">
-    <h1>exemplo</h1>
-    <form method="POST" action="/resultado3">
+    <h1>EXERCÍCIO 2</h1>
+    <form method="POST" action="/resultado2">
         <div class="row">
             <div class="col">
-                <label class="label-control"> INFORME UM VALOR E DESCUBRA SE É MAIOR QUE 10: </label>
+                <label class="label-control"> INFORME O VALOR DO QUILO: </label>
                 <input class="form-control" name="valor1" type="text" />
-            </div>            
+            </div>
+            <div class="col">
+                <label class="label-control"> INFORME A QUANTIDADE DE QUILOS DO PRODUTO CONSUMIDA: </label>
+                <input class="form-control" name="valor2" type="text" />
+            </div>
         </div>
         <div class="row mt-2">
             <div class="col">
-                <button type="submit" class="btn btn-primary">CALCULAR</button>
+                <button type="submit" class="btn btn-danger">CALCULAR</button>
             </div>
         </div>
     </form>
-<?php
-    if (isset($valor1))
-        echo "O VALOR DO TROCO É: $valor1";
+    <br>
+<?php    
+    if (isset($final))
+        echo "<b>O VALOR DO TROCO É: $final</b>";
 ?>
 
 

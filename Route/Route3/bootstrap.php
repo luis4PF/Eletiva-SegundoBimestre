@@ -12,9 +12,9 @@
     $router = new \Aluno\Luis4pf\Router($method, $path);
 
     //ADICIONAR AS ROTAS VALIDAS ABAIXO
-    $router->get('/exercicio', 'Aluno\Luis4pf\Controller\ExercicioController::exibir');
+    $router->get('/exercicio3', 'Aluno\Luis4pf\Controller\ExercicioController::exibir');
 
-    $router->post('/resultado', 'Aluno\Luis4pf\Controller\ExercicioController::exibirResultado');
+    $router->post('/resultado3', 'Aluno\Luis4pf\Controller\ExercicioController::exibirResultado');
     //ADICIONAR AS ROTAS VALIDAS ACIMA
 
     $result = $router->handler();

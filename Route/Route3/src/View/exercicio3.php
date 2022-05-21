@@ -14,45 +14,28 @@
 
 <body class="container">
     <h1>exemplo</h1>
-    <form method="POST" action="/resultado5">
+    <form method="POST" action="/resultado3">
         <div class="row">
-        <div class="cow mt-3">
-                <label for="valor1" class="label-control">
-                    INFORME SUA MÉDIA DO PRIMEIRO BIMESTRE:
-                </label>
-                <input type="number" step="any" name="valor1" 
-                    placeholder="8, 9.5" id="valor1" class="form-control" />
+            <div class="col">
+                <label class="label-control"> INFORME UM VALOR E DESCUBRA SE É MAIOR QUE 10: </label>
+                <input class="form-control" name="valor1" type="text" />
             </div>
-            <div class="cow mt-3">
-                <label for="valor2" class="label-control">
-                    INFORME SUA MÉDIA DO SEGUNDO BIMESTRE:
-                </label>
-                <input type="number" step="any" name="valor2" 
-                    placeholder="8, 9.5" id="valor2" class="form-control" />
-            </div>
-            <div class="cow mt-3">
-                <label for="valor3" class="label-control">
-                    INFORME SUA MÉDIA DO TERCEIRO BIMESTRE:
-                </label>
-                <input type="number" step="any" name="valor3" 
-                    placeholder="8, 9.5" id="valor3" class="form-control" />
-            </div>
-            <div class="cow mt-3">
-                <label for="valor4" class="label-control">
-                    INFORME SUA MÉDIA DO QUARTO BIMESTRE:
-                </label>
-                <input type="number" step="any" name="valor4" 
-                    placeholder="8, 9.5" id="valor4" class="form-control" />
-            </div>
+        </div>
+        <div class="row mt-2">
             <div class="col">
                 <button type="submit" class="btn btn-primary">CALCULAR</button>
             </div>
         </div>
     </form>
-<?php
-    if (isset($valor1))
-        echo "O VALOR DO TROCO É: $valor1";
-?>
+    <?php
+
+    if (isset($valor1) > 10)
+        echo "O VALOR INFORMADO É MAIOR QUE 10";
+    elseif (isset($valor1) == 10)
+        echo "O VALOR INFORMADO É IGUAL A 10";
+    else
+        echo "O VALOR INFORMADO É MENOR QUE 10";
+    ?>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
