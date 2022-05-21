@@ -14,7 +14,7 @@
     //ADICIONAR AS ROTAS VALIDAS ABAIXO
     $router->get('/exercicio', 'Aluno\Luis4pf\Controller\ExercicioController::exibir');
 
-$router->post('/resultado', 'Aluno\Luis4pf\Controller\ExercicioController::exibirResultado');
+    $router->post('/resultado', 'Aluno\Luis4pf\Controller\ExercicioController::exibirResultado');
     //ADICIONAR AS ROTAS VALIDAS ACIMA
 
     $result = $router->handler();
