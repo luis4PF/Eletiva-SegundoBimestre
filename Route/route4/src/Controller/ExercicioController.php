@@ -13,11 +13,11 @@ class ExercicioController
     {
         $valor1 = $_POST["valor1"];
         if ($valor1 > 0)
-            echo "O valor é positivo";
+            $result = "O VALOR É POSITIVO";
         else if ($valor1 == 0)
-            echo "O valor é igual a 0";
+            $result = "O VALOR É IGUAL A ZERO";
         else
-            echo "O valor é negativo";
+            $result = "O VALOR É NEGATIVO";
         require_once("../src/View/exercicio4.php");
     }
 }

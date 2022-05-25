@@ -28,7 +28,8 @@
         </div>
     </form>
 <?php
-    if (isset($valor1))
+    if (isset($result))
+        echo $result;
 ?>
 
 

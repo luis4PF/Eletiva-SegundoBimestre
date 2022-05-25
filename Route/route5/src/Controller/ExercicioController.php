@@ -19,9 +19,9 @@ class ExercicioController
         $media = ($valor1 + $valor2 + $valor3 + $valor4) / 4;
 
         if ($media >= 7.0)
-            echo "APROVADO";
+            $result = "APROVADO!!!!!";
         else
-            echo "REPROVADO";
+            $result = "REPROVADO F";
         require_once("../src/View/exercicio5.php");
     }
 }

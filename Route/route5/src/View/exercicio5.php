@@ -20,8 +20,7 @@
                 <label for="valor1" class="label-control">
                     INFORME SUA MÉDIA DO PRIMEIRO BIMESTRE:
                 </label>
-                <input type="number" step="any" name="valor1" placeholder="8, 9.5" 
-                    id="valor1" class="form-control" />
+                <input type="number" step="any" name="valor1" placeholder="8, 9.5" id="valor1" class="form-control" />
             </div>
             <div class="cow mt-3">
                 <label for="valor2" class="label-control">
@@ -45,12 +44,13 @@
                     id="valor4" class="form-control" />
             </div>
             <div class="col mt-3">
-                <button type="submit" class="btn btn-primary">CALCULAR</button>
+                <button type="submit" class="btn btn-danger">CALCULAR</button>
             </div>
         </div>
     </form>
     <?php
     if (isset($valor1))
+        echo $result;
     ?>
 
 

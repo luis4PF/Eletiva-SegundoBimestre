@@ -23,18 +23,14 @@
         </div>
         <div class="row mt-2">
             <div class="col">
-                <button type="submit" class="btn btn-primary">CALCULAR</button>
+                <button type="submit" class="btn btn-danger">CALCULAR</button>
             </div>
         </div>
     </form>
     <?php
 
-    if (isset($valor1) > 10)
-        echo "O VALOR INFORMADO É MAIOR QUE 10";
-    elseif (isset($valor1) == 10)
-        echo "O VALOR INFORMADO É IGUAL A 10";
-    else
-        echo "O VALOR INFORMADO É MENOR QUE 10";
+    if (isset($result))
+        echo $result;
     ?>
 
 
