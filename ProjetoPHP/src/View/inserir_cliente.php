@@ -12,6 +12,7 @@
   </head>
   <br>
   <body class="container">
+      <?php require_once "barra_navegacao.php"; ?>
     <h1>Inserir Cliente</h1>
 
     <form action="/cliente/inserir" method="post">
