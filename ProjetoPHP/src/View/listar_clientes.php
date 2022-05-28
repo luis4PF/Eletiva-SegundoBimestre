@@ -48,8 +48,9 @@
                 <tr>
                     <th scope="row"><?=$linha['id'] ?></th>
                     <td><?=$linha['nome'] ?></td>
-                    <td><?=$linha['id'] ?></td>
-                    <td><a class="btn btn-warning"> ALTERAR</a>
+                    <td><?=$linha['email'] ?></td>
+                    <td><a href="/cliente/alterar/<?=$linha['id'] ?>"
+                    class="btn btn-warning"> ALTERAR</a>
                         <a class="btn btn-danger"> EXCLUIR</a>
                     </td>
                 </tr>

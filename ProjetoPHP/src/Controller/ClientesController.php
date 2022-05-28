@@ -10,6 +10,11 @@ class ClientesController{
     public static function abrirFormularioInserir(){
         require_once "../src/View/inserir_cliente.php";
     }
+    public static function abrirFormularioAlterar($params){
+        $dao = new ClientesDAO();
+        $resultado = $dao->consultarPorId($params[1]);
+        require_once "../src/View/alterar_cliente.php";
+    }
 
     public static function abrirListaClientes(){
         $dao = new ClientesDAO();
