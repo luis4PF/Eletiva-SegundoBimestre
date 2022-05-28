@@ -37,4 +37,20 @@ class ClientesController{
         require_once "../src/View/listar_clientes.php";
     }
 
+    public static function editarCliente($params){
+        $cliente = new Clientes();
+        $cliente->setEmail($_POST['email']);
+        $cliente->setIdade($_POST['idade']);
+        $cliente->setNome($_POST['nome']);
+        $cliente->setId($params[1]);
+        $dao = new ClientesDAO();
+        if ($dao->alterar($cliente)){
+            $resposta = true;            
+        } else {
+            $resposta = false;
+        }
+        ClientesController::abrirListaClientes();
+        require_once "../src/View/listar_clientes.php";
+    }
+
 }
