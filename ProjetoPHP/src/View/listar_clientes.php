@@ -44,13 +44,17 @@
                 </tr>
             </thead>
             <tbody>
+                <?php while($linha = $resultado->fetch(PDO::FETCH_ASSOC)){ ?>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row"><?=$linha['id'] ?></th>
+                    <td><?=$linha['nome'] ?></td>
+                    <td><?=$linha['id'] ?></td>
+                    <td><a class="btn btn-warning"> ALTERAR</a>
+                        <a class="btn btn-danger"> EXCLUIR</a>
+                    </td>
                 </tr>
                 <tr>
+                <?php } ?>
                     <th scope="row">2</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
