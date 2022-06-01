@@ -15,11 +15,11 @@
       <div class="container">
         <h1>Alterar Produto</h1>
 
-        <form action="/cliente/editar/<?= $params[1] ?>" method="post">
+        <form action="/produto/editar/<?= $params[1] ?>" method="post">
             <div class="row">
                 <div class="col-5">
                     <label for="nome" class="label-control">
-                        Informe o nome:
+                        Informe o Id:
                     </label>
                     <input type="text" class="form-control"
                     name="nome" id="nome" value="<?= $resultado['nome'] ?>"/>
