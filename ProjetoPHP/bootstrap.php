@@ -31,14 +31,14 @@ $router->post('/cliente/inserir',
 $router->get('/clientes',
 'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
 
-$router->get('/cliente/novo',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
-
 $router->get('/cliente/alterar/{id}',
 'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioAlterar');
 
 $router->post('/cliente/editar/{id}',
 'Aluno\ProjetoPhp\Controller\ClientesController::editarCliente');
+
+$router->get('/cliente/excluir/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 
@@ -51,6 +51,3 @@ if (!$result){
 }
 
 echo $result($router->getParams());
-
- //view + terminal // php -S localhost:8000 -t public/ para executar 
-    //localhost:8000/ola-mundo // pesquisar na url do google
