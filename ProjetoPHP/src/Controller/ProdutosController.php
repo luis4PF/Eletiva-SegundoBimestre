@@ -16,7 +16,7 @@ class ProdutosController{
     public static function abrirFormularioAlterar($params){
         $dao = new ProdutosDAO();
         $resultado = $dao->consultarPorId($params[1]);
-        require_once "../src/View/alterar_cliente.php";
+        require_once "../src/View/alterar_produto.php";
     }
 
     public static function abrirListaProdutos(){

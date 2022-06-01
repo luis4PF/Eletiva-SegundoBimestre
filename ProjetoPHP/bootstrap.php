@@ -41,22 +41,22 @@ $router->get('/cliente/excluir/{id}',
 'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
 
 $router->get('/produto/novo',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
+'Aluno\ProjetoPhp\Controller\ProdutosController::abrirFormularioInserir');
 
 $router->post('/produto/inserir',
-'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
+'Aluno\ProjetoPhp\Controller\ProdutosController::inserirProduto');
 
 $router->get('/produtos',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
+'Aluno\ProjetoPhp\Controller\ProdutosController::abrirListaProdutos');
 
 $router->get('/produto/alterar/{id}',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioAlterar');
+'Aluno\ProjetoPhp\Controller\ProdutosController::abrirFormularioAlterar');
 
 $router->post('/produto/editar/{id}',
-'Aluno\ProjetoPhp\Controller\ClientesController::editarCliente');
+'Aluno\ProjetoPhp\Controller\ProdutosController::editarProduto');
 
 $router->get('/produto/excluir/{id}',
-'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
+'Aluno\ProjetoPhp\Controller\ProdutosController::excluirProduto');
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 

@@ -32,15 +32,15 @@
                             name="nome" id="nome"/>
                 </div>
                 <div class="col-2">
-                    <label for="idade" class="label-control">
+                    <label for="valor" class="label-control">
                         Informe o valor:
                     </label>
                     <input type="number" class="form-control"
-                            name="idade" id="idade"/>
+                            name="valor" id="valor"/>
                 </div>
                 <div class="col-5">
                     <label for="descricao" class="label-control">
-                        Informe o nome:
+                        Informe a descricao:
                     </label>
                     <input type="text" class="form-control"
                             name="descricao" id="descricao"/>
