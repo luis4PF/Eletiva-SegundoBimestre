@@ -40,6 +40,24 @@ $router->post('/cliente/editar/{id}',
 $router->get('/cliente/excluir/{id}',
 'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
 
+$router->get('/produto/novo',
+'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
+
+$router->post('/produto/inserir',
+'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
+
+$router->get('/produtos',
+'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
+
+$router->get('/produto/alterar/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioAlterar');
+
+$router->post('/produto/editar/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::editarCliente');
+
+$router->get('/produto/excluir/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
+
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 
 $result = $router->handler();

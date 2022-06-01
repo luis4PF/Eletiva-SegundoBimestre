@@ -7,8 +7,11 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/clientes">
+          <a class="nav-link active col-2" aria-current="page" href="/clientes">
               Clientes
+          </a>
+          <a class="nav-link active col-2" aria-current="page" href="/produtos">
+              Produtos
           </a>
         </li>
       </ul>

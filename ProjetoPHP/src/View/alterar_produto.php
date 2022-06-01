@@ -17,27 +17,34 @@
 
         <form action="/produto/editar/<?= $params[1] ?>" method="post">
             <div class="row">
-                <div class="col-5">
-                    <label for="nome" class="label-control">
-                        Informe o Id:
-                    </label>
-                    <input type="text" class="form-control"
-                    name="nome" id="nome" value="<?= $resultado['nome'] ?>"/>
-                </div>
-                <div class="col-5">
-                    <label for="email" class="label-control">
-                        Informe o email:
-                    </label>
-                    <input type="text" class="form-control"
-                    name="email" id="email" value="<?= $resultado['email'] ?>"/>
-                </div>
-                <div class="col-2">
-                    <label for="idade" class="label-control">
-                        Informe a idade:
-                    </label>
-                    <input type="number" class="form-control"
-                            name="idade" id="idade" value="<?= $resultado['idade'] ?>"/>
-                </div>
+            <div class="col-5">
+                <label for="id" class="label-control">
+                    Informe o id:
+                </label>
+                <input type="number" class="form-control"
+                        name="id" id="id" value="<?=$resultado['id'] ?>"/>
+            </div>
+            <div class="col-5">
+                <label for="nome" class="label-control">
+                    Informe o nome:
+                </label>
+                <input type="text" class="form-control"
+                        name="nome" id="nome" value="<?=$resultado['nome'] ?>"/>
+            </div>
+            <div class="col-2">
+                <label for="valor" class="label-control">
+                    Informe a valor:
+                </label>
+                <input type="number" class="form-control"
+                        name="valor" id="valor" value="<?=$resultado['valor'] ?>"/>
+            </div>
+            <div class="col-2">
+                <label for="descricao" class="label-control">
+                    Informe a Descrição:
+                </label>
+                <input type="text" class="form-control"
+                        name="descricao" id="descricao" value="<?=$resultado['descricao'] ?>"/>
+            </div>                
             </div>
             <div class="row">
                 <div class="col mt-5">
