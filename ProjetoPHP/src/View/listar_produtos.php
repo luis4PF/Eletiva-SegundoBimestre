@@ -16,8 +16,8 @@
         <h1>Produtos</h1>
 
         <?php
-            if (isset($resposta)){
-                if ($resposta){
+            if (isset($resultado)){
+                if ($resultado){
                     echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
                             Registro inserido com sucesso!
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

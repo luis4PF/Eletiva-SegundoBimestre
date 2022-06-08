@@ -37,7 +37,10 @@ class ProdutosController{
         } else {
             $resposta = false;
         }
-        ProdutosController::abrirListaProdutos();
+        $dao = new ProdutosDAO();
+        $resultado = $dao->consultar();
+        require_once "../src/View/listar_produtos.php";
+
     }
 
     public static function editarProduto($params){
@@ -53,7 +56,9 @@ class ProdutosController{
         } else {
             $resposta = false;
         }
-        ProdutosController::abrirListaProdutos();
+        $dao = new ProdutosDAO();
+        $resultado = $dao->consultar();
+        require_once "../src/View/listar_produtos.php";
     }
 
     public static function excluirProduto($params){
