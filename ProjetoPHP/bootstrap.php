@@ -40,6 +40,7 @@ $router->post('/cliente/editar/{id}',
 $router->get('/cliente/excluir/{id}',
 'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
 
+
 $router->get('/produto/novo',
 'Aluno\ProjetoPhp\Controller\ProdutosController::abrirFormularioInserir');
 
