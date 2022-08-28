@@ -29,6 +29,7 @@
         die();
     }
     echo $result($router->getParams());
+    
 
     //view + terminal // php -S localhost:8000 -t public/ para executar 
     //localhost:8000/ola-mundo // pesquisar na url do google
